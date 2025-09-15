@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Horoscope Generator</title>
+  <link rel="stylesheet" href="styles/horoscope-generator.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="constellation" id="constellation"></div>
+
+  <div class="container">
+    <div class="header">
+      <h1>Horoscope Generator</h1>
+      <p class="description">Discover what the stars have in store for you based on your birth month!</p>
+    </div>
+
+    <div class="input-section">
+      <label for="birthMonth">
+        <i class="fas fa-calendar-alt"></i>
+        <span>Select your birth month:</span>
+      </label>
+      <select id="birthMonth">
+        <option value="">-- Please select a month --</option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+      </select>
+    </div>
+
+    <div class="button-container">
+      <button id="generateBtn">
+        <i class="fas fa-star"></i>
+        <span>Reveal My Fortune</span>
+      </button>
+    </div>
+
+    <div class="result" id="result">
+      <div class="zodiac-sign">⭐</div>
+      <div class="zodiac-name"></div>
+      <p class="fortune">Your horoscope will appear here...</p>
+    </div>
+
+    <p class="footer">Note: This is a simplified horoscope based only on birth month.</p>
+  </div>
+
+  <script src="scripts/horoscope-generator.js"></script>
+</body>
+</html>
